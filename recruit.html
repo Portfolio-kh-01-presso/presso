@@ -1,0 +1,1384 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/resources/css/main.css" rel="stylesheet">
+    <link href="/resources/css/foot.css" rel="stylesheet">
+    <link rel="font" href="/resources/fonts/SCDfont.css">
+    <style> 
+     .warp_recruit #gnb .nav_recruit>a span:before{width: 100% }
+     .warp_recruit #gnb .nav_recruit>a{color: #62edc6;font-weight: 700}
+     .page-top-visual.recruit {
+    background: url(resources/img/recruit/recruit-top-visual.7a393b3bb533ad1f1930.png) 50% no-repeat;
+    height: 216px;
+    position: relative
+}
+
+.page-top-visual.recruit:before {
+    background: #141d23;
+    left: 0
+}
+
+.page-top-visual.recruit:after,
+.page-top-visual.recruit:before {
+    content: "";
+    height: 216px;
+    position: absolute;
+    top: 0;
+    width: 50%;
+    z-index: -1
+}
+
+.page-top-visual.recruit:after {
+    background: #dccfd4;
+    right: 0
+}
+
+
+.top_visual.top_recruit {
+    background: url(/static/media/visual_recruit.65acffd9c193099d90bb.png) no-repeat 50% 0;
+    margin-bottom: 107px;
+    position: relative
+}
+
+.top_recruit .bubble1 {
+    animation: bubbleAni 3.5s linear 0s infinite forwards;
+    -webkit-animation: bubbleAni 3.5s linear 0s infinite forwards;
+    margin-left: 340px;
+    top: 140px
+}
+
+.top_recruit .bubble1,
+.top_recruit .bubble2 {
+    left: 50%;
+    opacity: 0;
+    position: absolute;
+    -webkit-transform: scale(0);
+    transform: scale(0)
+}
+
+.top_recruit .bubble2 {
+    animation: bubbleAni 3.5s linear .2s infinite forwards;
+    -webkit-animation: bubbleAni 3.5s linear .2s infinite forwards;
+    margin-left: 235px;
+    top: 32px
+}
+
+@-webkit-keyframes bubbleAni {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0)
+    }
+
+    15% {
+        opacity: 1;
+        -webkit-transform: scale(1)
+    }
+
+    80% {
+        opacity: 1;
+        -webkit-transform: scale(1)
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: scale(1)
+    }
+}
+
+@keyframes bubbleAni {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(0);
+        transform: scale(0)
+    }
+
+    15% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+
+    80% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+
+    to {
+        opacity: 0;
+        -webkit-transform: scale(1);
+        transform: scale(1)
+    }
+}
+
+#wrap .cont_box.recruit_cont {
+    width: auto
+}
+
+
+.recruit_cont1 {
+    padding-bottom: 100px;
+    text-align: center
+}
+
+.recruit_cont2 {
+    background: #ffebf1;
+    min-height: 808px;
+    overflow: hidden;
+    position: relative
+}
+
+.recruit_cont2 .inner {
+    padding: 80px 0;
+    text-align: center;
+    width: 1370px !important
+}
+
+.recruit_cont2 .tit2 {
+    color: #222
+}
+
+.recruit_cont2 .tit_desc {
+    color: #be95a1
+}
+
+.recruit_cont2 .swiper-container {
+    padding: 0 9px 60px 0
+}
+
+.recruit_cont2 .swiper-wrapper {
+    margin-top: 40px;
+    padding-bottom: 30px;
+    position: relative;
+    text-align: left;
+    z-index: 1
+}
+
+.recruit_cont2 .swiper-wrapper:after {
+    clear: both;
+    content: "";
+    display: block
+}
+
+.recruit_cont2 .swiper-wrapper .swiper-slide {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px rgba(142, 47, 72, .3);
+    float: left;
+    height: 230px;
+    margin: 10px 0 0;
+    position: relative;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    width: 450px
+}
+
+.recruit_cont2 .swiper-wrapper .swiper-slide:hover {
+    box-shadow: 5px 5px 5px rgba(142, 47, 72, .3);
+    top: -6px
+}
+
+.recruit_cont2 .swiper-wrapper .swiper-slide a {
+    display: block;
+    height: 230px;
+    padding: 100px 30px 0
+}
+
+.recruit_cont2 .swiper-wrapper .state {
+    color: #bf6f86;
+    font-size: 18px;
+    left: 30px;
+    line-height: 20px;
+    position: absolute;
+    top: 47px
+}
+
+.recruit_cont2 .swiper-wrapper .dday {
+    background: #62edc6;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    height: 54px;
+    line-height: 54px;
+    position: absolute;
+    right: 22px;
+    text-align: center;
+    top: 20px;
+    width: 54px
+}
+
+.recruit_cont2 .swiper-wrapper .dday.today {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    line-height: 17px !important;
+    word-break: keep-all
+}
+
+.recruit_cont2 .swiper-wrapper .title {
+    display: block;
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    max-height: 52px;
+    overflow: hidden;
+    width: 100%
+}
+
+.recruit_cont2 .swiper-wrapper .date {
+    color: #888;
+    display: block;
+    font-size: 14px;
+    line-height: 16px
+}
+
+.recruit_cont2 .swiper-wrapper .view {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjMzNjNGOUE2N0FDNzExRTk5ODNEOTdBMDFBMTcwOTdCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjMzNjNGOUE3N0FDNzExRTk5ODNEOTdBMDFBMTcwOTdCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MzM2M0Y5QTQ3QUM3MTFFOTk4M0Q5N0EwMUExNzA5N0IiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MzM2M0Y5QTU3QUM3MTFFOTk4M0Q5N0EwMUExNzA5N0IiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6vQfJbAAAAKUlEQVR42mI8duwYAxr4D8SMyAJMDEQA6iligboBm7tQFDEOMocDBBgAHi4GZ+Ja5xgAAAAASUVORK5CYII=) no-repeat 100% 50%;
+    bottom: 19px;
+    color: #aeaeae;
+    font-size: 15px;
+    line-height: 17px;
+    padding-right: 18px;
+    position: absolute;
+    right: 20px
+}
+
+.recruit_cont2 .swiper-wrapper .end .state {
+    color: #888
+}
+
+.recruit_cont2 .swiper-wrapper .end .title {
+    color: #bbb
+}
+
+.recruit_cont2 .swiper-wrapper .end .dday {
+    background: #fff;
+    border: 1px dashed #62edc6;
+    color: #62edc6
+}
+
+.recruit_cont2 .swiper-wrapper .none {
+    cursor: none;
+    padding-top: 88px;
+    text-align: center
+}
+
+.recruit_cont2 .swiper-wrapper .none img {
+    margin-bottom: 10px
+}
+
+.recruit_cont2 .swiper-wrapper .none p {
+    color: #bbb;
+    font-size: 14px;
+    line-height: 16px
+}
+
+.recruit_cont2 .swiper-pagination-bullet {
+    -ms-ransition: width .2s linear;
+    background: none;
+    border: 1px solid #62edc6;
+    height: 10px;
+    margin: 0 2px;
+    opacity: 1;
+    transition: width .2s linear;
+    -webkit-transition: width .2s linear;
+    -moz-transition: width .2s linear;
+    width: 10px
+}
+
+.recruit_cont2 .swiper-pagination-bullet-active {
+    background: #62edc6;
+    border-radius: 5px;
+    height: 10px;
+    opacity: 1;
+    width: 20px
+}
+
+.recruit_cont3 {
+    background: #62edc6
+}
+
+.recruit_cont3 .inner {
+    padding: 80px 0;
+    text-align: center;
+    width: 1370px !important
+}
+
+.recruit_cont3 .tit2,
+.recruit_cont3 .tit_desc {
+    color: #fff
+}
+
+.recruit_cont3 .swiper-container {
+    padding: 0 9px 60px 0
+}
+
+.recruit_cont3 .swiper-wrapper {
+    margin-top: 40px;
+    padding-bottom: 30px;
+    position: relative;
+    text-align: left;
+    z-index: 1
+}
+
+.recruit_cont3 .swiper-wrapper:after {
+    clear: both;
+    content: "";
+    display: block
+}
+
+.recruit_cont3 .swiper-wrapper .swiper-slide {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 3px 3px 5px rgba(142, 47, 72, .3);
+    float: left;
+    height: 230px;
+    margin: 10px 0 0;
+    position: relative;
+    transition: all .2s linear;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    width: 335px
+}
+
+.recruit_cont3 .swiper-wrapper .swiper-slide:hover {
+    box-shadow: 5px 5px 5px rgba(142, 47, 72, .3);
+    top: -6px
+}
+
+.recruit_cont3 .swiper-wrapper .swiper-slide a {
+    display: block;
+    height: 230px;
+    padding: 100px 30px 0
+}
+
+.recruit_cont3 .swiper-wrapper .state {
+    color: #bf6f86;
+    font-size: 18px;
+    left: 30px;
+    line-height: 20px;
+    position: absolute;
+    top: 47px
+}
+
+.recruit_cont3 .swiper-wrapper .dday {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADoAAAA6CAYAAADhu0ooAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjEzRUE5RTkzN0RDNjExRTk5RkMwODdFNEMxNENCNkFEIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjEzRUE5RTk0N0RDNjExRTk5RkMwODdFNEMxNENCNkFEIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MTNFQTlFOTE3REM2MTFFOTlGQzA4N0U0QzE0Q0I2QUQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MTNFQTlFOTI3REM2MTFFOTlGQzA4N0U0QzE0Q0I2QUQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5Yk+0YAAADvUlEQVR42tybaUgVURTHzxOzrLTENlohIqGCFigk0sKghaCFjCisD4UmQWRRfjGKgvqQkIbQolRQYR8qQiisCDGtDKKdAiOMMlqRsrI9X//jnJFhmLfP+GbugR9vYO4b5v/uueeee+95Pr/fT2xfCkqpBy0ZFIAt4DTYBf7F8sDUyu1B7yfY+PKjQDZICdKmP+A3agHlYAwoAXVguJO/bKKNPVQDpgJ2kWfgLnggn89BHtgK0i2+ny1tuc1VNwutFJFsPpAhrI7gGYPBZbDPDld2wnU3SU/YYT5x5XbwOQD58RCaBQ444Gn9wIAA7JSh0mNCR4CzNrp/uDYSbHBSKLedAraBi6AZDKX4WIlEcNuCUW8ZE3NADkgjd9ggsBnstatHp4MKsNxFInXj+XigXUJnknuNA1M9yA1nCIZqkEnutskSEJ8ihV0HkgLOWyFy3bdgGHnHWmW6q0Lu2xFuj471mEg93y6TzCps180k71pSuEJ5WlnrYaF9whE6RJZN81USak4YJoJLsk4kVV13IWhSQCRbX0uhmFoKJX9NITUsMVCPzrZ5WyXeNg+dl20ltJHUsl6cMUHsaLPQm6Se8exxAWKTjUIf81BVUOw0cMyc69biYwGpacXGANRI6lqRUWizwkIPGYWuUVTkD3BETxjG42OxokJPYG3apvcobzT5FBTJkfZgV9Rtz9+fLivzZAWF1qA3l+rzaKGiItlOGTOjjQpH2wyj0HKFhWbpF12ZEaJuNa5XKSiU09o0jNNOPequB/cUFJoKJnUn9VDMk+oy8EFBsbPItNh+BVaAPyqOU/OuQgM5VEMQJ+sE1/nC6tjwryIiv4KVGJa1gYR+V0DkS7AIIp8Y51Gz/fa4yFtghlFkoB796WGRV8ASiPxlvpGgmNCTViJVdN3bgW5YCd1NWjFiq8dEvkNvtkQitEMS/XGSGnplL6kp2M1gxxDswsfBBMmYHnrVbUMJNWYX50irNWp3+bQSk1DduOCw1GXiPoHzpBVe3gnWMNI6Pt5oKiKtcisexvGjXrgGHonHhazAjlToN9LK0sriIPI9aWcpb6L5cjRnokfB6x4WyQuN3GhFRiuUF+l7JDBZ0eGAUC5RvxHLA6I95a4ireDQigHi3n6bRPKWZUWsD3HiOJ9r4XeQdgT5MUi7NtLqbrk4ZC4oBtWSoOg/0n2KogjZjmAUifFOBRcynyHtXxDdqRpp9XqHJbix8TZOnaENF43wnxFeyFBxtVCS4JEj+XOeROvKMF6edwca7HyR/wIMAOsx3AsDJtyaAAAAAElFTkSuQmCC) no-repeat 50% 50%;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    height: 58px;
+    line-height: 58px;
+    position: absolute;
+    right: 22px;
+    text-align: center;
+    top: 20px;
+    width: 58px
+}
+
+.recruit_cont3 .swiper-wrapper .dday.today {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    line-height: 17px !important
+}
+
+.recruit_cont3 .swiper-wrapper .title {
+    display: block;
+    font-size: 24px;
+    letter-spacing: -1px;
+    line-height: 26px;
+    margin-bottom: 15px;
+    max-height: 52px;
+    overflow: hidden;
+    width: 100%
+}
+
+.recruit_cont3 .swiper-wrapper .date {
+    color: #888;
+    display: block;
+    font-size: 14px;
+    line-height: 16px
+}
+
+.recruit_cont3 .swiper-wrapper .view {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAJCAYAAADgkQYQAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNi1jMTM4IDc5LjE1OTgyNCwgMjAxNi8wOS8xNC0wMTowOTowMSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTcgKFdpbmRvd3MpIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjMzNjNGOUE2N0FDNzExRTk5ODNEOTdBMDFBMTcwOTdCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjMzNjNGOUE3N0FDNzExRTk5ODNEOTdBMDFBMTcwOTdCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MzM2M0Y5QTQ3QUM3MTFFOTk4M0Q5N0EwMUExNzA5N0IiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MzM2M0Y5QTU3QUM3MTFFOTk4M0Q5N0EwMUExNzA5N0IiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6vQfJbAAAAKUlEQVR42mI8duwYAxr4D8SMyAJMDEQA6iligboBm7tQFDEOMocDBBgAHi4GZ+Ja5xgAAAAASUVORK5CYII=) no-repeat 100% 50%;
+    bottom: 19px;
+    color: #aeaeae;
+    font-size: 15px;
+    line-height: 17px;
+    padding-right: 18px;
+    position: absolute;
+    right: 20px
+}
+
+.recruit_cont3 .swiper-wrapper .end .state {
+    color: #888
+}
+
+.recruit_cont3 .swiper-wrapper .end .title {
+    color: #bbb
+}
+
+.recruit_cont3 .swiper-wrapper .end .dday {
+    background: #fff;
+    border: 1px dashed #62edc6;
+    color: #62edc6
+}
+
+.recruit_cont3 .swiper-wrapper .none {
+    cursor: none;
+    padding-top: 88px;
+    text-align: center
+}
+
+.recruit_cont3 .swiper-wrapper .none img {
+    margin-bottom: 10px
+}
+
+.recruit_cont3 .swiper-wrapper .none p {
+    color: #bbb;
+    font-size: 14px;
+    line-height: 16px
+}
+
+.recruit_cont3 .swiper-wrapper .swiper-slide:nth-child(4n+1) {
+    margin-left: 0
+}
+
+.recruit_cont3 .swiper-pagination-bullet {
+    -ms-ransition: width .2s linear;
+    background: none;
+    border: 1px solid #fff;
+    height: 10px;
+    opacity: 1;
+    transition: width .2s linear;
+    -webkit-transition: width .2s linear;
+    -moz-transition: width .2s linear;
+    width: 10px
+}
+
+.recruit_cont3 .swiper-pagination-bullet-active {
+    background: #fff;
+    border-radius: 5px;
+    height: 10px;
+    opacity: 1;
+    width: 20px
+}
+
+.recruit_cont4 {
+    background: #f9f9f9 url(/static/media/bg_recurit3.9b0700b1236b85e7f9a9.jpg) no-repeat 50% 0;
+    min-height: 782px
+}
+
+.recruit_cont4 .inner {
+    padding: 80px 0 88PX;
+    text-align: center
+}
+
+.recruit_cont4 .tit2 {
+    margin-bottom: 38px
+}
+
+.recruit_cont4 .tip {
+    color: #b4b9be;
+    font-size: 13px;
+    font-weight: 200;
+    line-height: 15px
+}
+
+.recruit_cont5 .inner {
+    padding: 80px 0 180px;
+    text-align: center;
+    width: 1200px !important
+}
+
+.pop_wrap#recruit_view {
+    display: block
+}
+
+.pop_wrap#recruit_view {
+    display: block
+}
+
+
+.recruit .banapresso-info .list-wrap .list-item.active .number-text .first {
+    -webkit-animation: numberAnimation .8s forwards;
+    animation: numberAnimation .8s forwards
+}
+
+.recruit .banapresso-info .list-wrap .list-item.active .number-text .second {
+    -webkit-animation: numberReverseAnimation .8s forwards;
+    animation: numberReverseAnimation .8s forwards
+}
+
+.recruit .banapresso-info .list-wrap .list-item.active .number-text .third {
+    -webkit-animation: numberAnimation .8s forwards;
+    animation: numberAnimation .8s forwards
+}
+
+.recruit .banapresso-info .list-wrap .list-item.active .number-text li {
+    color: #62edc6;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -1.2px;
+    line-height: 48px
+}
+
+.recruit .banapresso-info .list-wrap .list-item .info-text {
+    font-size: 18.5px;
+    font-weight: 700;
+    letter-spacing: -.46px;
+    line-height: 20px;
+    padding-top: 13px
+}
+
+.recruit .banapresso-info .date {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 24px;
+    text-align: right
+}
+
+.recruit .benefit-welfare {
+    margin: 148px auto 0;
+    width: 1000px
+}
+
+.recruit .benefit-welfare .list-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px
+}
+
+.recruit .benefit-welfare .list-wrap .list-item {
+    align-items: center;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 35px 35px 50px;
+    width: 320px
+}
+
+.recruit .benefit-welfare .list-wrap .list-item .list-title {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 22px;
+    padding-top: 23px
+}
+
+.recruit .benefit-welfare .list-wrap .list-item .description-list {
+    padding-top: 35px
+}
+
+.recruit .benefit-welfare .list-wrap .list-item .description-list .description-list-item {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    padding-left: 7px;
+    position: relative
+}
+
+.recruit .benefit-welfare .list-wrap .list-item .description-list .description-list-item:before {
+    background: #000;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 2px
+}
+
+.recruit .talent {
+    margin: 148px auto 0;
+    width: 1000px
+}
+
+.recruit .talent .list-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px
+}
+
+.recruit .talent .list-wrap .list-item {
+    align-items: center;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 40px 0 20px;
+    width: 235px
+}
+
+.recruit .talent .list-wrap .list-item .list-title {
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px
+}
+
+.recruit .office {
+    margin: 150px auto 0;
+    width: 1000px
+}
+
+.recruit .office .contents-list {
+    border-left: 6px solid #000;
+    margin-top: 40px;
+    padding-left: 30px
+}
+
+.recruit .office .contents-list .list-item {
+    display: flex;
+    gap: 15px
+}
+
+.recruit .office .contents-list .list-item .list-title {
+    font-size: 22px;
+    font-weight: 700
+}
+
+.recruit .office .contents-list .list-item .list-description {
+    font-size: 22px;
+    line-height: 37.5px
+}
+
+.recruit .incruit {
+    margin: 150px auto;
+    width: 1000px
+}
+
+.recruit .incruit .contents-list {
+    border-left: 6px solid #000;
+    margin-top: 40px;
+    padding-left: 30px
+}
+
+.recruit .incruit .contents-list .list-item {
+    display: flex;
+    gap: 15px
+}
+
+.recruit .incruit .contents-list .list-item:last-child {
+    gap: 60px;
+    padding-top: 24px
+}
+
+.recruit .incruit .contents-list .list-item .list-title {
+    font-size: 22px;
+    font-weight: 700
+}
+
+.recruit .incruit .contents-list .list-item .list-description {
+    font-size: 22px;
+    line-height: 34px
+}
+
+.recruit .title-wrap {
+    margin: 76px auto 0;
+    width: 1000px
+}
+
+.recruit .title-wrap .description {
+    font-weight: 500;
+    padding-top: 20px
+}
+
+.recruit .hiring-wrap .title-wrap .description {
+    background: url(/resources/img/logo_500px.png) 100% 100% no-repeat;
+    border-top: 1px solid #d2d2d2;
+    margin-top: 28px;
+    padding-top: 60px
+}
+
+.recruit .hiring-wrap .title-wrap .description>p {
+    color: #000;
+    font-size: 20.5px;
+    padding-top: 35px
+}
+
+.recruit .hiring-wrap .title-wrap .description>p span {
+    font-size: 26px;
+    font-weight: 800
+}
+
+.recruit .hiring-wrap .title-wrap .description>p:first-child {
+    padding-top: 0
+}
+
+.recruit .hiring-wrap .title-wrap .description>p strong {
+    font-size: 26px;
+    font-weight: 800
+}
+
+.recruit .banapresso-info {
+    margin: 150px auto 0;
+    width: 1000px
+}
+
+.recruit .banapresso-info .list-wrap {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px
+}
+
+.recruit .banapresso-info .list-wrap .list-item {
+    text-align: center
+}
+
+.recruit .banapresso-info .list-wrap .list-item:first-child {
+    margin-right: 120px
+}
+
+.recruit .banapresso-info .list-wrap .list-item:nth-child(2) {
+    margin-right: 152px
+}
+
+.recruit .banapresso-info .list-wrap .list-item .number-text {
+    color: #62edc6;
+    display: flex;
+    font-size: 48px;
+    font-weight: 800;
+    height: 48px;
+    justify-content: center;
+    letter-spacing: -1.2px;
+    line-height: 48px;
+    overflow: hidden
+}
+
+@-webkit-keyframes numberAnimation {
+    to {
+        -webkit-transform: translateY(-192px);
+        transform: translateY(-192px)
+    }
+
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+}
+
+@keyframes numberAnimation {
+    to {
+        -webkit-transform: translateY(-192px);
+        transform: translateY(-192px)
+    }
+
+    0% {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+}
+
+@-webkit-keyframes numberReverseAnimation {
+    to {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+
+    0% {
+        -webkit-transform: translateY(-192px);
+        transform: translateY(-192px)
+    }
+}
+
+@keyframes numberReverseAnimation {
+    to {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+
+    0% {
+        -webkit-transform: translateY(-192px);
+        transform: translateY(-192px)
+    }
+}
+
+.recruit .banapresso-info .list-wrap .list-item.active .number-text .first {
+    -webkit-animation: numberAnimation .8s forwards;
+    animation: numberAnimation .8s forwards
+}
+
+.recruit .banapresso-info .list-wrap .list-item.active .number-text .second {
+    -webkit-animation: numberReverseAnimation .8s forwards;
+    animation: numberReverseAnimation .8s forwards
+}
+
+.recruit .banapresso-info .list-wrap .list-item.active .number-text .third {
+    -webkit-animation: numberAnimation .8s forwards;
+    animation: numberAnimation .8s forwards
+}
+
+.recruit .banapresso-info .list-wrap .list-item.active .number-text li {
+    color: #62edc6;
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -1.2px;
+    line-height: 48px
+}
+
+.recruit .banapresso-info .list-wrap .list-item .info-text {
+    font-size: 18.5px;
+    font-weight: 700;
+    letter-spacing: -.46px;
+    line-height: 20px;
+    padding-top: 13px
+}
+
+.recruit .banapresso-info .date {
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 24px;
+    text-align: right
+}
+
+.recruit .benefit-welfare {
+    margin: 148px auto 0;
+    width: 1000px
+}
+
+.recruit .benefit-welfare .list-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px
+}
+
+.recruit .benefit-welfare .list-wrap .list-item {
+    align-items: center;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 35px 35px 50px;
+    width: 320px
+}
+
+.recruit .benefit-welfare .list-wrap .list-item .list-title {
+    font-size: 22px;
+    font-weight: 800;
+    line-height: 22px;
+    padding-top: 23px
+}
+
+.recruit .benefit-welfare .list-wrap .list-item .description-list {
+    padding-top: 35px
+}
+
+.recruit .benefit-welfare .list-wrap .list-item .description-list .description-list-item {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    padding-left: 7px;
+    position: relative
+}
+
+.recruit .benefit-welfare .list-wrap .list-item .description-list .description-list-item:before {
+    background: #000;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 10px;
+    width: 2px
+}
+
+.recruit .talent {
+    margin: 148px auto 0;
+    width: 1000px
+}
+
+.recruit .talent .list-wrap {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 30px
+}
+
+.recruit .talent .list-wrap .list-item {
+    align-items: center;
+    border: 1px solid #000;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+    padding: 40px 0 20px;
+    width: 235px
+}
+
+.recruit .talent .list-wrap .list-item .list-title {
+    color: #000;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 24px
+}
+
+.recruit .office {
+    margin: 150px auto 0;
+    width: 1000px
+}
+
+.recruit .office .contents-list {
+    border-left: 6px solid #000;
+    margin-top: 40px;
+    padding-left: 30px
+}
+
+.recruit .office .contents-list .list-item {
+    display: flex;
+    gap: 15px
+}
+
+.recruit .office .contents-list .list-item .list-title {
+    font-size: 22px;
+    font-weight: 700
+}
+
+.recruit .office .contents-list .list-item .list-description {
+    font-size: 22px;
+    line-height: 37.5px
+}
+
+.recruit .incruit {
+    margin: 150px auto;
+    width: 1000px
+}
+
+.recruit .incruit .contents-list {
+    border-left: 6px solid #000;
+    margin-top: 40px;
+    padding-left: 30px
+}
+
+.recruit .incruit .contents-list .list-item {
+    display: flex;
+    gap: 15px
+}
+
+.recruit .incruit .contents-list .list-item:last-child {
+    gap: 60px;
+    padding-top: 24px
+}
+
+.recruit .incruit .contents-list .list-item .list-title {
+    font-size: 22px;
+    font-weight: 700
+}
+
+.recruit .incruit .contents-list .list-item .list-description {
+    font-size: 22px;
+    line-height: 34px
+}
+
+    </style>
+</head>
+<body>
+    
+    <div id="root">
+        <div class="App">
+            <div id="wrap" class="warp_recruit">
+                <div id="contents">
+                    <header width="100%" id="header" class="sc-gLLvby dEzzaX sc-fHekdT idEnbl">
+                        <div class="inner">
+                            <h1 class="logo"><a href="/index.html"><img
+                                        src="/resources/img/recruit/from_open_storage.png" alt="Banapresso"></a></h1>
+                            <ul class="menu-list">
+                                <li class="list-item depth "><a
+                                        href="/brand.html"><span>소개</span></a>
+                                    <ul class="depth-view">
+                                        <li class="  "><a href="/brand.html"><span>브랜드
+                                                    소개</span></a></li>
+                                        <li class="  "><a href="/app.html"><span>앱 소개</span></a></li>
+                                    </ul>
+                                </li>
+                                <li class="list-item  "><a href="/menu.html"><span>메뉴</span></a></li>
+                                <li class="list-item  "><a href="/store.html"><span>매장 찾기</span></a>
+                                </li>
+                                <li class="list-item  "><a href="/news.html"><span>소식</span></a></li>
+                                <li class="list-item  "><a href="/recruit.html"><span>채용</span></a>
+                                </li>
+                                <li class="list-item depth "><a
+                                        href="/franchise/partner.html"><span>직가맹점</span></a>
+                                    <ul class="depth-view">
+                                        <li class="  "><a href="/compete.html"><span>브랜드
+                                                    경쟁력</span></a></li>
+                                        <li class="  "><a href="/interior.html"><span>인테리어
+                                                    특장점</span></a></li>
+                                        <li class="  "><a href="/store/partner.html"><span>직영점
+                                                    입점제안</span></a></li>
+                                        <li class="  "><a href="/franchise/partner.html"><span>가맹점
+                                                    창업문의</span></a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div><a class="btn_franchisee" href="/franchise/partner.html"></a>
+                    </header>
+                    <div class="recruit">
+                        <div class="page-top-visual recruit" > </div> 
+                        <div class="hiring-wrap">
+                            <div class="title-wrap">
+                                <h2 class="title">호랭다방은 채용 중</h2>
+                                <div class="description">
+                                    <p>호랭다방은 <br>글로벌 브랜드로의 성장을 목표로 <br>카페 백그라운드 비즈니스를 외주 없이 <br>다이렉트 운영을 원칙으로 하고 있습니다.
+                                        <br></p>
+                                    <p>소프트웨어개발, 하드웨어설계, 메뉴개발, 인테리어설계, 제품생산,<br>패키지 디자인, 영상제작, 홍보채널운영, 직영물류, 점포개발
+                                        등<br><span>각 분야 최고의 인재들과 함께하고 있습니다.</span></p>
+                                    <p>수평적인 조직구조와 최고의 업무지원 시스템에서 <br>각자의 전문성을 발휘합니다.</p>
+                                    <p><strong>우수한 인재는 언제든지 <br>호랭다방과 함께 혁신에 도전하고 <br>성취감을 이룰 수 있습니다.</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banapresso-info">
+                            <div class="title-wrap">
+                                <h3 class="title">호랭다방 현황</h3>
+                                <div class="description">1999년 출범하여, 직영점만 운영하다가, 2023년 상반기부터 가맹 사업을 시작하였습니다. <br>호랭다방과
+                                    함께 카페 프랜차이즈 시장을 주도할 인재를 모집합니다.</div>
+                            </div>
+                            <ul class="list-wrap">
+                                <li class="list-item action active"><img src="./호랭다방 - 채용_files/i_stores.png" alt="">
+                                    <div class="number-text">
+                                        <ul class="first">
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>0</li> <!--매장 십의 자리수-->
+                                        </ul>
+                                        <ul class="second">
+                                            <li>1</li> <!--매장 일의 자리수-->
+                                            <li>7</li>
+                                            <li>8</li>
+                                            <li>9</li>
+                                            <li>0</li>
+                                        </ul>
+                                    </div>
+                                    <p class="info-text">매장수 직영 01, 가맹점 없음</p>
+                                </li>
+                                <li class="list-item action active"><img src="./호랭다방 - 채용_files/i_annual_turnover.png"
+                                        alt="">
+                                    <div class="number-text">
+                                        <ul class="first">
+                                            <li>1</li>
+                                            <li>2</li>
+                                            <li>3</li>
+                                            <li>4</li>
+                                            <li>0</li> <!--연간 매출액 백의 자리수-->
+                                        </ul>
+                                        <ul class="second">
+                                            <li>0</li> <!--연간 매출액 십의 자리수-->
+                                            <li>7</li> 
+                                            <li>8</li> 
+                                            <li>9</li> 
+                                            <li>8</li> 
+                                        </ul>
+                                        <ul class="third">
+                                            <li>1</li> 
+                                            <li>2</li> 
+                                            <li>3</li> 
+                                            <li>4</li> 
+                                            <li>3</li> <!--연간 매출액 십의 자리수-->
+                                        </ul><span>천원</span>
+                                    </div>
+                                    <p class="info-text">연간 매출액</p>
+                                </li>
+                                <li class="list-item action active"><img src="./호랭다방 - 채용_files/i_employee.png" alt="">
+                                    <div class="number-text">
+                                        <ul class="first">
+                                            <li>8</li> 
+                                            <li>7</li> 
+                                            <li>6</li> 
+                                            <li>5</li> 
+                                            <li>0</li> <!--인원 백의 자리수-->
+                                        </ul>
+                                        <ul class="second">
+                                            <li>0</li> <!--인원 십의 자리수-->
+                                            <li>9</li> 
+                                            <li>8</li> 
+                                            <li>7</li> 
+                                            <li>6</li> 
+                                        </ul>
+                                        <ul class="third">
+                                            <li>6</li> 
+                                            <li>7</li> 
+                                            <li>8</li> 
+                                            <li>9</li> 
+                                            <li>5</li> <!--인원 첫번째 자리수-->
+                                        </ul>
+                                    </div>
+                                    <p class="info-text">프로젝트 팀원 수</p>
+                                </li>
+                            </ul>
+                            <p class="date">* 2023년 7월 기준</p>
+                        </div>
+                        <div class="benefit-welfare">
+                            <h3 class="title">혜택 및 복지</h3>
+                            <ul class="list-wrap">
+                                <li class="list-item action fadeinbottom active"><img
+                                        src="/resources/img/recruit/i_welfare.png" alt="">
+                                    <p class="list-title">직원 복지</p>
+                                    <ul class="description-list">
+                                        <li class="description-list-item">정직원 일 7시간 근무 (35시간/주)</li>
+                                        <li class="description-list-item">바나 프레소 카페 음료 무료</li>
+                                        <li class="description-list-item">년 1회 종합 건강 검진 제공</li>
+                                        <li class="description-list-item">회원권 보유<br>→ 리솜, 한화, 대명, 라카이샌드 등</li>
+                                        <li class="description-list-item">명절 선물 지급<br>→ 상품권, 최고급 과일 1박스</li>
+                                    </ul>
+                                </li>
+                                <li class="list-item action fadeintop active"><img src="/resources/img/recruit/i_system.png"
+                                        alt="">
+                                    <p class="list-title">사내 시스템</p>
+                                    <ul class="description-list">
+                                        <li class="description-list-item">전직원 매니저 호칭 <br>→ 자기주도적 업무 진행</li>
+                                        <li class="description-list-item">연장 근로 수당 지급<br>→ 100% 자율 진행</li>
+                                        <li class="description-list-item">자율 연차 사용<br>→ 그룹웨어 신청, 반려 없음</li>
+                                        <li class="description-list-item">시차출근제 시행</li>
+                                    </ul>
+                                </li>
+                                <li class="list-item action fadeinbottom active"><img
+                                        src="/resources/img/recruit/i_environment.png" alt="">
+                                    <p class="list-title">근무 환경</p>
+                                    <ul class="description-list">
+                                        <li class="description-list-item">각종 먹을거리가 가득한 스낵바</li>
+                                        <li class="description-list-item">1천만원 상당의 커피 머신</li>
+                                        <li class="description-list-item">전신 안마의자 10대</li>
+                                        <li class="description-list-item">3~8인 분리된 독립형 사무공간</li>
+                                        <li class="description-list-item">최고 사양의 모니터,<br>모션 데스크, 사무용 의자 등 도입</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="talent">
+                            <h3 class="title">인재상</h3>
+                            <ul class="list-wrap">
+                                <li class="list-item action fadeintop active"><img
+                                        src="/resources/img/recruit/i_passion.png" alt="">
+                                    <p class="list-title">열정 DNA</p>
+                                </li>
+                                <li class="list-item action fadeinbottom active"><img
+                                        src="/resources/img/recruit/i_responsibility.png" alt="">
+                                    <p class="list-title">책임감 / 정직성</p>
+                                </li>
+                                <li class="list-item action fadeintop active"><img
+                                        src="/resources/img/recruit/i_teamwork.png" alt="">
+                                    <p class="list-title">팀워크/소통</p>
+                                </li>
+                                <li class="list-item action fadeinbottom active"><img
+                                        src="/resources/img/recruit/i_customer.png" alt="">
+                                    <p class="list-title">고객중심</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="office">
+                            <h3 class="title">본사 사무실</h3>
+                            <ul class="contents-list">
+                                <li class="list-item action fadeinright active">
+                                    <p class="list-title">본사</p>
+                                    <p class="list-description">서울특별시 강남구 테헤란로14길 6 남도빌딩 2F, 3F, 4F, 5F, 6F</p>
+                                </li>
+                                <li class="list-item action fadeinright active">
+                                    <p class="list-title">교육장</p>
+                                    <p class="list-description">서울특별시 강남구 테헤란로10길 9 그랑프리 빌딩 4F, 5F, 7F</p>
+                                </li>
+                                <li class="list-item action fadeinright active">
+                                    <p class="list-title">쿠키 공장</p>
+                                    <p class="list-description"> 서울특별시 강남구 테헤란로 130 호산빌딩 5F, 6F</p>
+                                </li>
+                                <li class="list-item action fadeinright active">
+                                    <p class="list-title">물류센터</p>
+                                    <p class="list-description">서울특별시 중구 남대문로 120 그레이츠 청계(구 대일빌딩) 2F, 3F</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="incruit">
+                            <h3 class="title">채용 중인 공고</h3>
+                            <ul class="contents-list">
+                                <li class="list-item action fadeinright active">
+                                    <p class="list-description">본사 직원은 잡코리아, 사람인에서 수시 채용 진행 중</p>
+                                </li>
+                                <li class="list-item action fadeinright active">
+                                    <p class="list-description">매장 직원은 잡코리아, 사람인, 알바몬에서 상시 채용 진행 중</p>
+                                </li>
+                                <li class="list-item action fadeinright active"><a
+                                        href="https://www.jobkorea.co.kr/Recruit/Co_Read/Recruit/C/banaplefb"
+                                        target="blank"><img src="/resources/img/recruit/i_jobkorea.png" alt=""></a><a
+                                        href="https://www.saramin.co.kr/zf_user/company-info/view-inner-recruit?csn=SURhUjFMYitySER5d0ZDSjc1WjgvZz09"
+                                        target="blank"><img src="/resources/img/recruit/i_saramin.png" alt=""></a><a
+                                        href="https://www.albamon.com/list/gi/mon_brand_list.asp?brpcd=1060&amp;rkcd=%uBC14%uB098%uD504%uB808%uC18C&amp;scd=&amp;tc=30&amp;keyword_code=1060053"
+                                        target="blank"><img src="/resources/img/recruit/i_albamon.png" alt=""></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <footer width="100%" id="footer" class="sc-eDLJxc diMtfd">
+                    <div width="1200px" class="sc-jTQDnj kylotc">
+                        <button type="button" id="btn_top" class="sc-blmETK eNxgBZ btn_top_animation">
+                            <img src="/resources/img/menu/btn_top.png" alt="TOP" loading="eager" width="68" height="68" class="sc-iBdmCd blJlrD">
+                        </button>
+                        <div class="foot_cont">
+                            <div class="foot_copy">
+                                <img src="/resources/img/logo_G.png" alt="banapresso">
+                            </div>
+                            <ul class="foot_menu">
+                                <li class="privacy">
+                                    <button class="sc-ifyqMZ eCrSIr">개인정보처리방침</button>
+                                    <ul>
+                                        <li>
+                                            <a href="/privacy.html">
+                                                호랭다방앱 개인정보 처리방침
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/companyPrivacy.html">
+                                                기업사이트 개인정보 처리방침
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="privacy">
+                                    <button class="sc-ifyqMZ eCrSIr">이용약관</button>
+                                    <ul>
+                                        <li>
+                                            <a href="/termsofservice.html">
+                                                이용약관
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/termsofgift.html">
+                                                충전식 상품권 약관
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="/termsofpoint.html">
+                                                잔돈포인트 약관
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="bold">
+                                    <a href="/recruit.html">
+                                        채용
+                                    </a>
+                                </li>
+                                <li class="bold">
+                                    <a href="/store/partner.html">
+                                        입점제안
+                                    </a>
+                                </li>
+                                <li class="bold">
+                                    <a href="/franchise/partner.html">
+                                        가맹점 문의
+                                    </a>
+                                </li>
+                                <li class="bold module-layer-btn">
+                                    <a href="#" role="none">
+                                        제휴 문의
+                                    </a>
+                                </li>
+                                <li class="bold module-layer2-btn">
+                                    <a href="#" role="none">
+                                        매장 이용 및 고객 문의
+                                    </a>
+                                </li>
+                            </ul>
+                            <address>
+                                <span>
+                                    <strong>
+                                        <b>상호명</b> : 호랭다방
+                                    </strong>
+                                </span>
+                                <span>
+                                    <b>대표자명</b> : 호랑이 
+                                    <i class="foot_bar">|</i>
+                                    <b>사업장 소재지</b> : 서울특별시 강남구 테헤란로10길 9 그랑프리 빌딩 4F, 5F, 7F
+                                    <i class="foot_bar">|</i>
+                                    <b>사업자번호</b> : 358-87-00860
+                                </span>
+                                <span>
+                                    <b>대표전화</b> : 1234-5678
+                                    <i class="foot_bar">|</i>
+                                    <b>Fax </b> : 070-1234-5678 
+                                    <i class="foot_bar">|</i>
+                                    <b>이메일</b> : 
+                                    <a href="mailto:qna@honrangdabang.com">
+                                        qna@honrangdabang.com 또는 1234-5678
+                                    </a>
+                                </span>
+                                <span class="text_copy">
+                                    © banaple F&amp;B. All Rights Reserved.
+                                </span>
+                            </address>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script>
+        
+        document.querySelector(".bold.module-layer-btn>a").setAttribute("href","javascript:void(0)");
+        document.querySelector(".bold.module-layer2-btn>a").setAttribute("href","javascript:void(0)");
+
+        window.addEventListener("scroll", function(){
+            if(window.pageYOffset > 50){
+                document.querySelector("#header").className = 'sc-gLLvby dEzzaX sc-fHekdT hDfwhw';
+            } else{
+                document.querySelector("#header").className = 'sc-gLLvby dEzzaX sc-fHekdT idEnbl';
+            }
+        });
+
+        const backToTopButton = document.querySelector("#btn_top");
+        window.addEventListener("scroll", function(){
+            if(window.pageYOffset > 200){
+                backToTopButton.style.display = "block";
+            } else{
+                backToTopButton.style.display = "none";
+            }
+        });
+        backToTopButton.addEventListener("click", function(){
+            window.scrollTo({top: 0, behavior: "smooth"});
+        });
+        
+        const title_1 = document.querySelector(".privacy>button");
+        const content_1 = document.querySelector(".privacy ul");
+        const content_2 = document.querySelector(".privacy:nth-child(2) ul");
+        const title_2 = document.querySelector(".privacy:nth-child(2)>button");
+        function handleClick(){
+            if(title_1.className === 'sc-ifyqMZ eCrSIr'){
+                title_1.className = 'sc-ifyqMZ dOCgaz';
+                content_1.style.display = "block";
+                content_2.style.display = "none";
+                if(content_2.style.display === "none"){
+                    title_2.className = 'sc-ifyqMZ eCrSIr';
+                }
+            } else if(title_1.className === 'sc-ifyqMZ dOCgaz'){
+                title_1.className = 'sc-ifyqMZ eCrSIr';
+                content_1.style.display = "none";
+            }
+        }
+        title_1.addEventListener('click', handleClick);
+        function handleClick2(){
+            if(title_2.className === 'sc-ifyqMZ eCrSIr'){
+                title_2.className = 'sc-ifyqMZ dOCgaz';
+                content_2.style.display = "block";
+                content_1.style.display = "none";
+                if(content_1.style.display === "none"){
+                    title_1.className = 'sc-ifyqMZ eCrSIr';
+                }
+            } else if(title_2.className === 'sc-ifyqMZ dOCgaz'){
+                title_2.className = 'sc-ifyqMZ eCrSIr';
+                content_2.style.display = "none";
+            }
+        }
+        title_2.addEventListener('click', handleClick2);
+    </script>
+</body>
+</html>

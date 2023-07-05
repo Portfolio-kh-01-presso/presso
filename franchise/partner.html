@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <link href="./reset.css" rel="stylesheet"> -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가맹점 창업문의</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.slim.js"
+    integrity="sha256-7GO+jepT9gJe9LB4XFf8snVOjX3iYNb0FHYr5LI1N5c=" crossorigin="anonymous"></script>
+    <!-- <link href="./partner.css" rel="stylesheet"> -->
+   
+</head>
+
+<style>
+    @import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@2.0/nanumsquare.css);
+    @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+*{
+    font-family: 'Nanum Gothic', sans-serif;
+}
+body {
+    width: 1654px;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header {
+    padding: 0;
+    margin: 0;
+    width: 1654px;
+    height: 93px;
+    background-color: white;
+}
+
+.inner {
+    margin: 0 300px 0 300px;
+    padding: 0;
+    width: 1200px;
+    height: 105px;
+    background-color: white;
+    opacity: 0.9;
+}
+
+.logo {
+    position: absolute;
+    top: 10px;
+}
+
+.page-list {
+    position: absolute;
+    top: 150px;
+    z-index: 99990;
+    left: -120px;
+    border: solid 1px rgb(216, 214, 214);
+    border-radius: 10%;
+    padding: 0;
+
+}
+
+.list-item {
+    display: block;
+
+    background-color: white;
+    border-color: gray;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+
+/* .list-item:hover{
+    background-color: #f1648a;
+    
+    
+} */
+
+.list-item :hover {
+    color: #62edc6;
+
+}
+a{
+    text-decoration: none;
+}
+.list-item>a:hover {
+    border-bottom: solid 2px #62edc6;
+}
+
+.Enquiries_for_membership {
+    z-index: 99990;
+    position: fixed;
+    top: 150px;
+    right: 120px;
+}
+
+nav ul {
+    float: right;
+    list-style-type: none;
+}
+
+.menucontainer {
+    margin: 0;
+    padding: 0;
+    width: 588px;
+    height: 105px;
+}
+
+nav ul li {
+    top: 15px;
+    text-align: center;
+    display: inline-block;
+}
+
+.dropdown {
+    position: relative;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+#pink {
+    width: 100px;
+    font-weight: 800;
+
+}
+
+#pink:hover {
+    background-color: white;
+    color: #98EFCC;
+    border-bottom: 2px solid #62edc6;
+
+}
+
+/*         .dropdown-menu:hover:not(.home) {
+    text-align: center;
+    background-color: white;
+    color: pink; 
+} */
+
+
+/* footer {
+    padding: 60px 0px 50px 0px;
+    width: 1654px;
+    height: 300px;
+    background-color: white;
+} */
+#wrapper {
+    margin: 0 200px;
+    padding: 100px 150px 0 250px;
+    width: 1254px;
+    height: 1483px;
+    background-color: white;
+}
+
+.red {
+    color: red;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px
+}
+
+.tit {
+    font-size: x-large;
+}
+
+.pred {
+    position: absolute;
+    right: 490px;
+    color: red;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px
+}
+
+.h1 {
+    margin: 0;
+}
+
+#line {
+    margin: 0;
+}
+
+.tb1_wrap {
+    padding: 25px 0 0 0;
+    width: 1254px;
+    height: 657px;
+}
+
+.tbody {
+    padding: 15px;
+}
+
+table {
+    width: 1254px;
+    height: 600px;
+}
+
+tr,
+td {
+    font-size: 20px;
+    padding: 15px;
+}
+
+th {
+    width: 109px;
+    height: 73px;
+    padding: 15px 0;
+}
+
+.radio {
+    display: inline;
+    width: 110px;
+    height: 36px;
+    padding: 15px;
+}
+
+#offer_name,#offer_hp,#offer_name4 {
+    font-size: 18px;
+    padding: 0 18px;
+    width: 260px;
+    height: 50px;
+}
+
+#offer_name1 {
+    width: 150px;
+    height: 48px;
+}
+
+#inp_control {
+    width: 300px;
+    height: 54px;
+}
+
+.textbox {
+    padding: 0;
+}
+
+#textar {
+    font-size: 20px;
+    width: 790px;
+    height: 220px;
+    resize: none;
+}
+
+.agree {
+    background-color: rgb(238, 238, 238);
+    width: 1050px;
+    height: 260px;
+    border: 1px solid rgb(235, 232, 232);
+    position: absolute;
+    top: 1100px;
+    z-index: 1;
+}
+
+.hypen_list {
+    list-style-type: none;
+    font-weight: 100;
+}
+
+div .ted {
+    margin: 50px;
+    text-align: center;
+}
+
+.botton1 {
+    border: none;
+    background-color: #62edc6;
+    border-radius: 150px;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    height: 76px;
+    line-height: 81px;
+    min-width: 250px;
+    padding: 0 10px;
+}
+
+#buttona {
+    color: white;
+    background-color: #62edc6;
+}
+
+
+.foot_menu {
+    list-style: none;
+    display: flex;
+}
+
+#footerbom {
+    padding: 0 0 0px 300px;
+}
+
+footer {
+    font-size: small;
+    margin: 0 150px;
+}
+
+#menu {
+    height: 50px;
+    background: white;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.main1 {
+    width: 600px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+.main1>li {
+    float: left;
+    width: 25%;
+    line-height: 50px;
+    text-align: center;
+    position: relative;
+}
+
+.main1>li:hover .main2 {
+    left: 0;
+}
+
+/* 
+.main1>li a {
+    display: block;
+}
+*/
+*::selection {
+    background-color: #62edc6;
+    color: #fff;
+}
+.main1>li a:hover {
+    color: #62edc6;
+    font-weight: bold;
+
+}
+
+.main2 {
+    border: 0.5px solid rgb(207, 206, 206);
+    position: absolute;
+    left: -9999px;
+    /* background: rgba(226, 226, 226, 0.466); */
+    background: white;
+    width: 82px;
+    padding: 0 10px 10px 10px;
+    font-size: 11px;
+    font-weight: 100;
+    border-radius: 5%;
+    top: 52px;
+}
+
+.main2>a {
+    text-align: center;
+
+}
+
+.main2>li {
+    display: inline-block;
+}
+
+.inner {
+    position: fixed;
+}
+
+header {
+    position: relative;
+}
+
+.privacy {
+    margin: 10px;
+}
+
+footer {
+    font-family: 'Nanum Gothic', sans-serif;
+    margin: 0 0 0 350px;
+    padding: 0;
+    width: 1400px;
+}
+
+footer .foot_menu {
+    position: relative;
+    bottom: 0px;
+    z-index: 100;
+    height: 40px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer>ul>li {
+    display: inline-block;
+    margin: 0 10px;
+    padding: 0;
+}
+
+footer ul>li a {
+    color: rgb(77, 75, 75);
+    display: inline-block;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 0;
+}
+
+footer ul>li button {
+    color: rgb(77, 75, 75);
+    font-weight: bold;
+    font-size: 17px;
+    padding: 0;
+    border: none;
+    background-color: white;
+}
+
+footer .foot_menu>li:nth-of-type(1) {
+    width: 136px;
+    height: 23.4px;
+    z-index: 1;
+}
+
+footer .foot_menu>li:nth-of-type(2) {
+    width: 68px;
+    height: 23.4px;
+    z-index: 1;
+}
+
+footer ul>li>ul {
+    position: absolute;
+    background-color: white;
+    top: 100%;
+    border: 1px solid rgb(116, 113, 113);
+    list-style-type: none;
+    width: 260px;
+    height: 70px;
+    line-height: 1.5;
+    display: none;
+    padding: 0;
+    margin: 0;
+    text-align: start;
+}
+
+footer>ul>li:nth-child(2) ul {
+    z-index: 10;
+    width: 200px;
+    height: 100px;
+    margin: 0;
+}
+
+footer ul>li>ul>li {
+    margin: 5px;
+}
+
+footer ul>li>ul>li>a {
+    font-size: 15px;
+    margin: 0;
+    color: rgb(77, 75, 75);
+}
+
+footer img {
+
+    padding: 20px;
+}
+
+footer>ul>li:last-child {
+    margin-bottom: 50px;
+}
+a {
+    text-decoration: none;
+}
+#btn_top{
+    border: none;
+    position: fixed;
+    bottom: 100px;
+    right: 10%;
+}
+</style>
+<body>
+    <header>
+        <div class="inner">
+            <h1 class="logo">
+                <a href="/index.html"><img src="/resources/img/recruit/from_open_storage.png" height="35px" width="200px">
+                </a>
+            </h1>
+            <div class="Enquiries_for_membership">
+                <a href="/franchise/partner.html"><img src="/resources/img/Introduction_brand/Enquiries_for_membership.png"></a>
+            </div>
+            <div>
+                <ul class="page-list" style="padding: 10px;">
+                    <li class="list-item"  >
+                        <a href="#">
+                            <span>브랜드 경쟁력</span>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">
+                            <span>인테리어 특장점</span>
+                        </a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">
+                            <span>직영점 입점제안</span>
+                        </a>
+                    </li>
+                    <li id="top" class="list-item">
+                        <a href="/franchise/partner.html";>
+                            <span>가맹점 창업문의</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+<!--             <nav>
+                <ul class="menucontainer">
+                    <li class="dropdown">
+                        <div class="dropdown-menu"><a href="#"><strong>소개</strong></a></div>
+                    </li>
+                    <li class="dropdown">
+                        <div class="dropdown-menu"><a href="#"><strong>메뉴</strong></a></div>
+                    </li>
+                    <li class="dropdown">
+                        <div class="dropdown-menu"><a href="#"><strong>매장 찾기</strong></a></div>
+                    </li>
+                    <li class="dropdown">
+                        <div class="dropdown-menu"><a href="#"><strong>소식</strong></a></div>
+                    </li>
+                    <li class="dropdown">
+                        <div class="dropdown-menu"><a href="#"><strong>채용</strong></a></div>
+                    </li>
+                    <li class="dropdown">
+                        <div class="dropdown-menu"><a href="#"><strong>직가맹점</strong></a></div>
+                    </li>
+                </ul>
+            </nav> -->
+            <nav>
+                <div id="menu">
+                    <ul class="main1">
+                       <li id="pink"><a href="/brand.html">소개</a>
+                            <ul class="main2">
+                                <li><a href="/brand.html">브랜드소개</a></li>
+                                <hr style="margin: 0 ;">
+                                <li><a href="/app.html">앱소개</a></li>
+                            </ul>
+                        </li>
+                        <li id="pink"><a href="/menu.html">메뉴</a></li>
+                        <li id="pink"><a href="/store.html">매장찾기</a></li>
+                        <li id="pink"><a href="/news.html">소식</a></li>
+                        <li id="pink"><a href="/recruit.html">채용</a></li>
+                        <li id="pink"><a href="/franchise/partner.html">직가맹점</a>
+                            <ul class="main2" >
+                                <li><a href="/news.html">브랜드 경쟁력</a></li>
+                                <hr style="margin: 0 ;">
+                                <li><a href="/franchise/interior.html">인테리어 특장점</a></li>
+                                <hr style="margin: 0 ;">
+                                <li><a href="/store/partner.html">직영점 입점제안</a></li>
+                                <hr style="margin: 0 ;">
+                                <li><a href="/franchise/partner.html">가맹점 창업문의</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div id="wrapper">
+        <section>
+            <div class="tit">
+                <h1 class="h1">상담 신청<p class="pred">*표시 되어진 부분은 필수 항목입니다.</p>
+                </h1>
+            </div>
+            <hr id="line" width="1000px" style="border: solid 2px black">
+            <div class="tb1_wrap">
+                <table class="tb1">
+                    <colgroup>
+                        <col style="width: 109px;">
+                        <col style="width: auto;">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th align="left">
+                                <label for="chk_offer_type_0">
+                                    점포유무
+                                    <span class="red"> *</span>
+                                </label>
+                            </th>
+                            <td>
+                                <div class="radio">
+                                    <input type="radio" id="chk" name="offer_code" value="3" checked>
+                                    <label for="chk">점포 없음</label>
+                                </div>
+                                <div class="radio"></div>
+                                <input type="radio" id="chkn" name="offer_code" value="1">
+                                <label for="chkn">점포 있음</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th align="left">
+                                <label>이름<span class="red"> *</span></label>
+                            </th>
+                            <td>
+                                <input type="text" name="mname" id="offer_name1">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th align="left">
+                                <label for="franchise_inp_email">
+                                    이메일<span class="red"> *</span>
+                                </label>
+                            </th>
+                            <td>
+                                <div>
+                                    <input type="text" name="email" id="offer_name1"><span>@</span>
+                                    <input type="text" name="email" id="offer_name">
+                                    <select id="inp_control" onchange="seletBoxChange(this.value)">
+                                        <option value>직접입력</option>
+                                        <option value="naver.com">naver.com</option>
+                                        <option value="nate.com">nate.com</option>
+                                        <option value="gmail.com">gmail.com</option>
+                                        <option value="hanmail.net">hanmail.net</option>
+                                        <option value="daum.net">daum.net</option>
+                                    </select>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th align="left">
+                                <label for="franchise_inp_hp">
+                                    휴대폰<span class="red"> *</span>
+                                </label>
+                            </th>
+                            <td>
+                                <input type="text" name="hp" id="offer_hp" placeholder="숫자만 입력" maxlength="11">
+                            </td>
+                        </tr>
+                        <tr>
+                            <th align="left">
+                                <label for="franchise_inp_hp">
+                                    지역 선택<span class="red"> *</span>
+                                </label>
+                            </th>
+                            <td>
+                                <select id="offer_name4" onchange="categoryChange(this)">
+                                    <option value>시/도 (필수)</option>
+                                    <option value="a">서울특별시</option>
+                                    <option value="b">인천광역시</option>
+                                    <option value="c">대전광역시</option>
+                                    <option value="d">광주광역시</option>
+                                    <option value="e">울산광역시</option>
+                                </select>
+                                <select id="offer_name4">
+                                    <option>시/구/군 (필수)</option>
+                                </select>
+                                <select id="offer_name">
+                                    <option value>읍/면/동 (선택)</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th align="left">
+                                <label for="franchise_inp_hp">
+                                    내용<span class="red"> *</span>
+                                </label>
+                            </th>
+                            <td>
+                                <div class="textbox">
+                                    <textarea id="textar" cols="80" rows="10" 
+                                        placeholder=" 임대조건 및 상권설명 등을 간략하게 기입해주세요"></textarea>
+                                </div>
+                            </td>
+                        </tr>
+                           <button type="button" id="btn_top" ><img src="/resources/img/directfranchise_compete/btn_top.png"></button>
+                    </tbody>
+                </table>
+            </div>
+            <div class="agree">
+                <div class="check">
+                    <input type="checkbox" name="term_agree">
+                    <label><strong>개인정보 수집 및 이용 동의(필수)</strong></label>
+                </div>
+                <div class="policy">
+                    <ul class="hypen_list">
+                        <li style="color: gray;">-수집 항목 : 신청자 구분, 이름, 이메일, 휴대번호, 점포구분, 개인이 직접 입력한 내용</li><br>
+                        <li style="color: gray;">-수집 목적 : 문의 및 결과 회신</li><br>
+                        <li style="color: gray;">-이용 기간 : 원칙적으로, 개인정보 수집 및 이용 목적이 달성된 후 파기합니다
+                            <br>(단, 관계법령의 규정에 의하여 보존할 필요가 있는 경우 아래와같이 관계법령에서 정한 일정기간동안 개인정보 보관할 수 있습니다)
+                        </li><br>
+                        <li style="color: gray;">-소비자의 불만 또는 분쟁처리에 관한 기록 : 3년(전자상거래 등에서의 소비자보호에 관한 법률)</li><br>
+                        <li style="color: gray;">-위와 같이 개인정보를 처리하는데 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 일부 서비스 제공이 제한 될 수
+                            있습니다.
+                        </li>
+                        <br>
+                    </ul>
+                    <br>
+                    <hr id="line" width="1050px" style="border: solid 1 gray">
+                    <div class="ted">
+                        <button type="button" class="botton1"><a href="#" id="buttona">신청하기</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div>
+        <img src="/resources/img/Introduction_brand/footer_logo.png">
+    </div>
+        <ul class="foot_menu">
+            <li><button type="button">개인정보처리방침</button>
+                <ul>
+                    <li><a href="/privacy/privacy.html">호랭다방앱 개인정보 처리방침</a></li><!--
+                    --><li><a href="/privacy/companyPrivacy.html">기업사이트 개인정보 처리방침</a></li>
+                </ul>
+            </li>
+            <li><button type="button">이용약관</button>
+                <ul>
+                    <li><a href="/termsof/termsofservice.html">이용약관</a></li>
+                    <li><a href="/termsof/termsofgift.html">충전식 상품권 약관</a></li>
+                    <li><a href="/termsof/termsofpoint.html">잔돈포인트 약관</a></li>
+                </ul>
+            </li>
+            <li><a href="/recruit.html" class="bold">채용</a></li> <!--
+        --><li><a href="/store/partner.html" class="bold">입점제안</a></li><!--
+        --><li><a href="franchise/partner.html" class="bold">가맹점 문의</a></li><!--
+        --><li><a href="#" class="bold">제휴문의</a></li><!--
+        --><li><a href="#" class="bold">매장 이용 및 고객문의</a></li>
+        </ul>
+        <ul>
+            <li class="bold">상호명: 주식회사 호랭다방</li>
+            <li>대표자명 : 호랑이 /사업장 소재지 : 서울특별시 강남구 테헤란로 10길 9 그랑프리 빌딩 4F,5F,7F /사업자번호 : 851-87-00622</li>
+            <p></p>
+            <li>대표전화 : 1544-9970 |Fax : 070-1234-5678 |이메일 : qna@horangtearoom.com 또는 1544-9970</li>
+            <li>© horangtearoom F&B. All Rights Reserved.</li>
+        </ul>
+    </footer>
+    <script>
+        $(".foot_menu li button").on("click",footMenuToggle);
+
+        function footMenuToggle(){
+            $(this).next().toggle();
+
+        if($(this).parent().next().children("ul").css("display")==="block"){
+                $(this).parent().next().children("ul").toggle();
+            }
+
+         if($(this).parent().prev().children("ul").css("display")==="block"){
+                $(this).parent().prev().children("ul").toggle();
+            }
+        }
+
+        
+        var seletBoxChange =function(value){
+            console.log(value)
+            $("#offer_name").val(value)
+        }
+
+        function categoryChange(e){
+            const state =document.getElementById("state")
+            const con11 = ["서1","서1"]
+            const con22 = ["서2","서1"]
+            const con33 = ["서3","서1"]
+            const con44 = ["서4","서1"]
+
+            if(e.value=="con1"){
+                add = cont11
+            }
+        }
+
+        /* $('#buttop').on("click",function(){
+            $('html , boby').animate({scrollTop:0},'400')
+            return false;
+        }) */
+        /* backToTopButton.addEventListener("click", function(){
+        window.scrollTo({top: 0, behavior: "smooth"});
+        }); */
+
+        /* $(function(){
+            $(window).scroll(function(){
+                if($(this).scrollTop() > 0){
+                    $('#MOVE_TOP_BIN').fadeIn();
+                }else{
+                    $('#MOVE_TOP_BIN').fadeOut();
+                }
+            });
+            $("#MOVE_TOP_BIN").click(function(){
+                $('html, boby').animate({
+                    scrollTop : 0
+                }, 100);
+                return false;
+            });
+        }) */
+        const backToTopButton = document.querySelector("#btn_top");
+            window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 200) {
+            backToTopButton.style.display = "block";
+        } else {
+            backToTopButton.style.display = "none";
+        }
+        });
+        backToTopButton.addEventListener("click", function () {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+         });
+
+
+   </script>
+</body>
+
+</html>
